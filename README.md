@@ -1,7 +1,5 @@
-getting-cleaning-data-project
+Repository for the course project of the Coursera course "Getting and Cleaning Data"
 =============================
-
-# Repository for the course project of the Coursera course "Getting and Cleaning Data"
 
 ## Repository contents:
 
