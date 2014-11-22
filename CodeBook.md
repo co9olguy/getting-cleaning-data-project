@@ -23,16 +23,16 @@ There are 69 variables. The first three are:
 - SubjectLabel: number from 1-30 representing different subjects collecting experimental data
 - ActivityLabel: number from 1-6 representing different activity types
 - ActivityName: readable name for the 6 different activity types. 
-  *1="Walking": walking (flat ground) 
-  *2="WalkingUp": walking upstairs
-  *3="WalkingDown": walking downstairs 
-  *4="Sitting"
-  *5="Standing"
-  *6="Laying"
+  * 1="Walking": walking (flat ground) 
+  * 2="WalkingUp": walking upstairs
+  * 3="WalkingDown": walking downstairs 
+  * 4="Sitting"
+  * 5="Standing"
+  * 6="Laying"
 
 The remaining variable descriptions are all the same as in the original data (see below), except that we subset only those features which involved either the mean or std functions. The variable names have also been cleaned up into legal R variable names (specifically, removed brackets, and converted '-' to '.').
 
-The full list of variables appearing in the tidy data set are:
+The full list of variables appearing in the tidy data set are (see below for naming conventions, taken from original source):
 
 - SubjectLabel
 - ActivityLabel
