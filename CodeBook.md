@@ -9,12 +9,16 @@ The tidy data set "tidedata.txt" is generated from the "Human Activity Recogniti
 
 - adds descriptive activity names to the data set, 
 
-- labels the data set with descriptive variable names based on the original source data names (but cleaned up to fit R syntax and rename all appearances of the expression 'BodyBody' with 'Body')
+- labels the data set with descriptive variable names based on the original source data names (but cleaned up to fit R syntax and rename all appearances of the erroneous expression 'BodyBody' with 'Body')
 
 - creates the tidy data set "tidydata.txt" with the average of each variable for each (subject,activity) combination
 
+Thus, the observations in the tidy data set consist of the average of all 'mean' and 'std' feature values from the original data, for each subject and each activity type.
+
 
 ### Variable descriptions:
+
+There are 69 variables. The first three are:
 
 - SubjectLabel: number from 1-30 representing different subjects collecting experimental data
 - ActivityLabel: number from 1-6 representing different activity types
