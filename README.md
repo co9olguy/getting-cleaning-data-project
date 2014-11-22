@@ -3,7 +3,7 @@ Course project for the Coursera course "Getting and Cleaning Data"
 
 ## Repository contents:
 
-*run_analysis.R*: Script for taking the "Human Activity Recognition Using Smartphones" data set (data available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip; original source at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and converting it into a smaller (wide) tidy data set "tidydata.txt". Assumes the folder "UCI HAR DATASET" is in present working directory). 
+*run_analysis.R*: Script for taking the "Human Activity Recognition Using Smartphones" data set (data available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip; original source at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and converting it into a smaller (wide) tidy data set "tidydata.txt". Assumes the folder "UCI HAR DATASET" is in present working directory. 
 
 *codebook.md*: Codebook describing variables, data and transformations performed while cleaning up the original HAR data set.
 
@@ -14,7 +14,7 @@ Course project for the Coursera course "Getting and Cleaning Data"
 The run_analysis.R script performs the following:
 - combines the HAR test and training datasets, 
 
-- extracts only the features based directly on the functions mean() and std() of each measurement from the original data (note: it _does not_ consider other features which may have the word mean in them),
+- extracts only the features based directly on the functions mean() and std() of each measurement from the original data (note: it _does not_ consider other features which may have the word 'mean' in them),
 
 - adds descriptive activity names to the data set, 
 
