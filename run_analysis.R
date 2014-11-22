@@ -90,4 +90,6 @@ new.data <- rename(new.data,not.BodyBody.names)
 
 #Finally, reorder SubjectLabel and ActivityName to be first two columns
 new.data <- new.data[c(69,67:68,1:66)]
+
+#Save tidy data to disc
 write.table(new.data,"tidydata.txt",row.name=FALSE)
