@@ -2,7 +2,105 @@
 Codebook for course project of Coursera class "Getting and Cleaning Data"
 ==================================================================
 
+The tidy data set "tidedata.txt" is generated from the "Human Activity Recognition Using Smartphones" data set [1] via the script "run\_analysis.R". This script performs the following:
+- combines the HAR test and training datasets, 
 
+- extracts only the features based directly on the functions mean() and std() of each measurement from the original data (note: it _does not_ consider other features which may have the word 'mean' in them),
+
+- adds descriptive activity names to the data set, 
+
+- labels the data set with descriptive variable names based on the original source data names (but cleaned up to fit R syntax and rename all appearances of the expression 'BodyBody' with 'Body')
+
+- creates the tidy data set "tidydata.txt" with the average of each variable for each (subject,activity) combination
+
+
+### Variable descriptions:
+
+- SubjectLabel: number from 1-30 representing different subjects collecting experimental data
+
+- ActivityLabel: number from 1-6 representing different activity types
+
+- ActivityName: readable name for the 6 different activity types. 
+1="Walking": walking (flat ground) 
+2="WalkingUp": walking upstairs
+3="WalkingDown": walking downstairs 
+4="Sitting"
+5="Standing"
+6="Laying"
+
+The remaining variable descriptions are all the same as in the original data (see below), except that we subset only those features which involved either the mean or std functions. The variable names have also been cleaned up into legal R variable names (specifically, removed brackets, and converted '-' to '.').
+
+The remaining variables in the tidy data set are:
+
+"SubjectLabel"
+"ActivityLabel"
+"ActivityName"
+"tBodyAcc.mean.X"
+"tBodyAcc.mean.Y"
+"tBodyAcc.mean.Z"
+"tBodyAcc.std.X"
+"tBodyAcc.std.Y"
+"tBodyAcc.std.Z"
+"tGravityAcc.mean.X"
+"tGravityAcc.mean.Y"
+"tGravityAcc.mean.Z"
+"tGravityAcc.std.X"
+"tGravityAcc.std.Y"
+"tGravityAcc.std.Z"
+"tBodyAccJerk.mean.X"
+"tBodyAccJerk.mean.Y"
+"tBodyAccJerk.mean.Z"
+"tBodyAccJerk.std.X"
+"tBodyAccJerk.std.Y"
+"tBodyAccJerk.std.Z"
+"tBodyGyro.mean.X"
+"tBodyGyro.mean.Y"
+"tBodyGyro.mean.Z"
+"tBodyGyro.std.X"
+"tBodyGyro.std.Y"
+"tBodyGyro.std.Z"
+"tBodyGyroJerk.mean.X"
+"tBodyGyroJerk.mean.Y"
+"tBodyGyroJerk.mean.Z"
+"tBodyGyroJerk.std.X"
+"tBodyGyroJerk.std.Y"
+"tBodyGyroJerk.std.Z"
+"tBodyAccMag.mean"
+"tBodyAccMag.std"
+"tGravityAccMag.mean"
+"tGravityAccMag.std"
+"tBodyAccJerkMag.mean"
+"tBodyAccJerkMag.std"
+"tBodyGyroMag.mean"
+"tBodyGyroMag.std"
+"tBodyGyroJerkMag.mean"
+"tBodyGyroJerkMag.std"
+"fBodyAcc.mean.X"
+"fBodyAcc.mean.Y"
+"fBodyAcc.mean.Z"
+"fBodyAcc.std.X"
+"fBodyAcc.std.Y"
+"fBodyAcc.std.Z"
+"fBodyAccJerk.mean.X"
+"fBodyAccJerk.mean.Y"
+"fBodyAccJerk.mean.Z"
+"fBodyAccJerk.std.X"
+"fBodyAccJerk.std.Y"
+"fBodyAccJerk.std.Z"
+"fBodyGyro.mean.X"
+"fBodyGyro.mean.Y"
+"fBodyGyro.mean.Z"
+"fBodyGyro.std.X"
+"fBodyGyro.std.Y"
+"fBodyGyro.std.Z"
+"fBodyAccMag.mean"
+"fBodyAccMag.std"
+"fBodyAccJerkMag.mean"
+"fBodyAccJerkMag.std"
+"fBodyGyroMag.mean"
+"fBodyGyroMag.std"
+"fBodyGyroJerkMag.mean"
+"fBodyGyroJerkMag.std"
 
 ### Relevant details from original data source [1]:
 
